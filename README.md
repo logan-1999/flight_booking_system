@@ -5,7 +5,7 @@ This is a Flask application for booking flights. It uses SQLAlchemy to interact 
 ## Setup
 
 1. Clone the repository.
-2. run docker compose up -d
+2. run `docker compose up -d`
 3. It will setup your db and app infra
 4. navigate to "localhost:5001"
 
