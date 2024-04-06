@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Booking Confirmation</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        table {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Success, Hurray !!!</h1>
+    <h1>Flight Booking Confirmation</h1>
+
+        <table border="2">
+            <tr><td colspan="2" style="text-align: center;">Passenger Details</td></tr>
+            <tr><td>Name</td><td>{{ name }}</td></tr>
+            <tr><td>Mobile Number</td><td>{{ mobile_number }}</td></tr>
+            <tr><td colspan="2" style="text-align: center;">---</td></tr>
+            <tr><td colspan="2" style="text-align: center;">Flight Details</td></td></tr>
+            <tr><td>Flight Name</td><td>{{ flightname }}</td></tr>
+            <tr><td>From</td><td>{{ departure_location }}</td></tr>
+            <tr><td>To</td><td>{{ arrival_location }}</td></tr>
+            <tr><td>Departure Time</td><td>{{ departure_time }}</td></tr>
+            <tr><td>Arrival Time</td><td>{{ arrival_time }}</td></tr>
+            <tr><td>Price</td><td>{{ price }}</td></tr>
+        
+          </table>
+          <br><br>
+          <form method="GET" action="/flights/search">
+            
+            <input type="Submit" value="Book Another Flight">
+        </form>
+</body>
+</html>
